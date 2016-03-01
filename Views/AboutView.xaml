@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="Noizio.Net.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:helpers="clr-namespace:Noizio.Net.Helpers"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Hyperlink}">
+            <Setter Property="helpers:HyperlinkUtility.LaunchDefaultBrowser" Value="True" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument FontSize="12" FontFamily="Arial" TextAlignment="Left">
+                <Paragraph>
+                    Developed by
+                    <Hyperlink NavigateUri="mailto:sergii.gulenok@okami.tech">Sergii Gulenok</Hyperlink>
+                    from
+                    <Hyperlink NavigateUri="http://okami.tech/">Okami Technologies OU</Hyperlink>.
+                </Paragraph>
+
+                <Paragraph>The application is greatly inspired by
+                    <Hyperlink NavigateUri="http://noiz.io/">Noizio</Hyperlink> app for MacOS and iOS. Please check it out!
+                </Paragraph>
+
+                <Paragraph FontSize="16" FontWeight="Bold">Acknowledgements</Paragraph>
+                <Paragraph>All materials in the application are taken from open resources.</Paragraph>
+                <Paragraph FontSize="16" FontWeight="Bold">Icons</Paragraph>
+                <Paragraph>
+                    Most of the sound icons are made by
+                    <Hyperlink NavigateUri="http://www.freepik.com/">Freepik</Hyperlink> from
+                    <Hyperlink NavigateUri="http://www.flaticon.com/">www.flaticon.com</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    Waves icon is made by
+                    <Hyperlink NavigateUri="http://www.flaticon.com/authors/ocha">OCHA</Hyperlink> from
+                    <Hyperlink NavigateUri="http://www.flaticon.com/">www.flaticon.com</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    Application icons by Austin Andrews of
+                    <Hyperlink NavigateUri="http://templarian.com/">Templarian.com</Hyperlink>
+                </Paragraph>
+
+                <Paragraph FontSize="16" FontWeight="Bold">Sounds</Paragraph>
+                <Paragraph>
+                    All sounds are downloaded from
+                    <Hyperlink NavigateUri="http://freesound.org/">freesound.org</Hyperlink> . The authors are:
+                </Paragraph>
+                <List>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Toivo161/sounds/242064/">Stormy Wind</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Toivo161/">Toivo161</Hyperlink> |
+                            <Span>License:</Span> Attribution
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Motion_S/sounds/221758/">Ambient Forest Birds.wav</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Motion_S/">Motion_S</Hyperlink> |
+                            <Span>License:</Span> Attribution
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/wescwave/sounds/170014/">mountain river 06-09-2012.wav</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/wescwave/">wescwave</Hyperlink> |
+                            <Span>License:</Span> Attribution Noncommercial
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/urupin/sounds/178813/">Fire (from a nettle).</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/urupin/">urupin</Hyperlink> |
+                            <Span>License:</Span> Creative Commons 0
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/rossgk/sounds/49938/">Take5Contrescarpe.mp3</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/rossgk/">rossgk</Hyperlink> |
+                            <Span>License:</Span> Creative Commons 0
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/FonotecadeCanarias/sounds/210954/">Sea and seabirds</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/FonotecadeCanarias/">FonotecadeCanarias</Hyperlink> |
+                            <Span>License:</Span> Attribution Noncommercial
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/soundmary/sounds/196638/">waves and wind.mp3</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/soundmary/">soundmary</Hyperlink> |
+                            <Span>License:</Span> Creative Commons 0
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Charel%20Sytze/sounds/24341/">The North Sea 4.mp3</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/Charel%20Sytze/">Charel Sytze</Hyperlink> |
+                            <Span>License:</Span> Attribution
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/0alexis0/sounds/182711/">Bird and Rain.mp3</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/0alexis0/">0alexis0</Hyperlink> |
+                            <Span>License:</Span> Creative Commons 0
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/sithjawa/sounds/93681/">Rain and frogs 2.mp3</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/sithjawa/">sithjawa</Hyperlink> |
+                            <Span>License:</Span> Attribution
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/bastipictures/sounds/243775/">distant rain</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/bastipictures/">bastipictures</Hyperlink> |
+                            <Span>License:</Span> Creative Commons 0
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/DeantheDinosauce/sounds/164092/">Heavy Rain w/ Cars</Hyperlink> by
+                            <Hyperlink NavigateUri="http://www.freesound.org/people/DeantheDinosauce/">DeantheDinosauce</Hyperlink> |
+                            <Span>License:</Span> Attribution
+                        </Paragraph></ListItem>
+                    <ListItem>
+                        <Paragraph> S:
+                        <Hyperlink NavigateUri="http://www.freesound.org/people/mjudo12/sounds/74908/">freewilly.mp3</Hyperlink> by
+                        <Hyperlink NavigateUri="http://www.freesound.org/people/mjudo12/">mjudo12</Hyperlink> |
+                        <Span>License:</Span> Attribution
+                    </Paragraph></ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</UserControl>

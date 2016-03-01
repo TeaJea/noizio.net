@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Noizio.Net.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Noizio.Net.Views"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:viewModels="clr-namespace:Noizio.Net.ViewModels"
+             mc:Ignorable="d" d:DataContext="{d:DesignInstance {x:Type viewModels:SettingsViewModel}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="96" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="32" Margin="0,0,0,4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="32" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="32" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Row="0" Grid.Column="0" Height="16" Width="16" Fill="Black" VerticalAlignment="Center">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Visual="{StaticResource appbar_sound_1}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+
+            <Slider Grid.Column="1" Minimum="0.0" Maximum="1.0" Value="{Binding Volume}"
+                    HorizontalAlignment="Stretch" Margin="5,0"
+                    Style="{DynamicResource FlatSlider}" Width="Auto" />
+
+            <Rectangle Grid.Row="0" Grid.Column="2" Height="16" Width="16" Fill="Black" VerticalAlignment="Center">
+                <Rectangle.OpacityMask>
+                    <VisualBrush Visual="{StaticResource appbar_sound_3}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+        </Grid>
+        
+        <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" FontSize="16">Start at Login</Label>
+        <Label Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" FontSize="16">Play after Launch</Label>
+
+        <controls:ToggleSwitch Grid.Row="1" Grid.Column="1" IsChecked="{Binding StartAtLogin}" />
+        <controls:ToggleSwitch Grid.Row="2" Grid.Column="1" IsChecked="{Binding PlayAfterLaunch}" />
+    </Grid>
+</UserControl>

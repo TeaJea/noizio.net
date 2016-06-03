@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
              xmlns:viewmodels="clr-namespace:Noizio.Net.ViewModels"
-             xmlns:controls1="clr-namespace:Noizio.Net.Controls"
              mc:Ignorable="d"
              d:DataContext="{d:DesignInstance {x:Type viewmodels:ApplicationViewModel}}"
              d:DesignHeight="360" d:DesignWidth="280">
